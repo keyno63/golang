@@ -28,7 +28,7 @@ func checkError(err error) {
 
 func selectDB(db *sql.DB) {
 	var uNumber string
-	uNumber = "0734331001"
+	uNumber = "5"
 	rows, err := db.Query("SELECT id, login FROM users WHERE id = $1;", uNumber)
 	//rows, err := db.Query("SELECT user_id,user_name FROM user_data;")
 	checkError(err)
