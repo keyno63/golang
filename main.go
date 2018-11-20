@@ -11,6 +11,9 @@ func main() {
 	fmt.Println("Go言語はじめました！")
 	fmt.Println("SQL query, sample.")
 	sqlquery.Query()
+
+	url := "http://google.co.jp"
+	httpServer.Request(url)
 	fmt.Println("http server, sample.")
 	httpServer.Server()
 
